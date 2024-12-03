@@ -1,0 +1,175 @@
+:root {
+    --orange: #FF7931;
+    --black: #000000;
+    --white: #FFFFFF;
+    --light-gray: #F9F9FC;
+    --dark-gray: rgba(0, 0, 0, 0.7);
+    --light-gray: rgba(0, 0, 0, 0.3);
+}
+
+body {
+    font-family: "Playfair Display", Arial, Arial, Helvetica;
+}
+
+.container {
+    max-width: 1480px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+.header {
+
+}
+
+.head__title {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 46px;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 47px;
+}
+
+.nav__list {
+    list-style-type: none;
+    display: flex;
+    gap: 49px;
+}
+
+.nav__item {
+
+}
+
+.nav__link {
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.section__image {
+    background: url(asstets/Hotel-11.png) no-repeat center center/cover;
+    width: 100%;
+    height: 464px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new {
+    margin-top: 62px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: var(--white);
+    padding: 5px 16px;
+    text-transform: uppercase;
+    background-color: var(--orange);
+    font-family: "Raleway", sans-serif;
+}
+
+.slider__title {
+    line-height: 80px;
+    font-size: 64px;
+    letter-spacing: 6.5px;
+    color: var(--white);
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+}
+
+.slider__destionation {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 55px;
+}
+
+.slider__prev::after {
+    width: 64px;
+    height: 2px;
+    background-color: var(--white);
+    position: absolute;
+    content: '';
+    left: 91px;
+    top: 50%;
+    cursor: pointer;
+}
+
+.slider__prev, .slider__next {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: var(--white);
+    font-size: 13px;
+    font-family: "Raleway", sans-serif;
+    position: relative;
+}
+
+.slider__divider {
+    width: 2px;
+    height: 42px;
+    background-color: var(--white);
+    position: relative;
+}
+
+.slider__divider::before {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid var(--white);
+    position: absolute;
+    content: '';
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.slider__divider::after {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid var(--white);
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.slider__next::before {
+    width: 64px;
+    height: 2px;
+    background-color: var(--white);
+    position: absolute;
+    content: '';
+    left: 74px;
+    top: 50%;
+    cursor: pointer;
+}
+
+.slider__text {
+    max-width: 456px;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--white);
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 48px;
+}
+
